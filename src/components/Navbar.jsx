@@ -273,7 +273,6 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <React.Fragment key={link.label}>
               <ListItem 
-                button 
                 onClick={() => {
                   if (link.type === 'link') {
                     navigate('/'); // Default to home for other links
@@ -283,6 +282,7 @@ const Navbar = () => {
                     // For now, let's just make Blogs/News visible if it's Resources
                   }
                 }}
+                sx={{ cursor: 'pointer' }}
               >
                 <ListItemText primary={link.label} />
                 {link.type === 'dropdown' && <KeyboardArrowDownIcon />}
@@ -291,10 +291,10 @@ const Navbar = () => {
               {/* Mobile Sub-menu for Resources */}
               {link.label === 'Resources' && (
                 <Box sx={{ pl: 4 }}>
-                  <ListItem button onClick={() => { navigate('/blogs'); handleDrawerToggle(); }}>
+                  <ListItem onClick={() => { navigate('/blogs'); handleDrawerToggle(); }} sx={{ cursor: 'pointer' }}>
                     <ListItemText primary="Blogs" />
                   </ListItem>
-                  <ListItem button onClick={() => { navigate('/news'); handleDrawerToggle(); }}>
+                  <ListItem onClick={() => { navigate('/news'); handleDrawerToggle(); }} sx={{ cursor: 'pointer' }}>
                     <ListItemText primary="News" />
                   </ListItem>
                 </Box>
