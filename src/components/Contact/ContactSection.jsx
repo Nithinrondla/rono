@@ -40,7 +40,7 @@ const ContactSection = ({
       />
 
       <Container maxWidth="xl" sx={{ px: { xs: 3, md: 10 }, position: 'relative', zIndex: 1 }}>
-        <Grid container spacing={{ xs: 6, md: 8, lg: 12 }} alignItems="flex-start">
+        <Grid container spacing={{ xs: 6, md: 8, lg: 12 }} sx={{ alignItems: 'flex-start' }}>
 
           {/* LEFT SECTION */}
           <Grid item xs={12} lg={5}>
