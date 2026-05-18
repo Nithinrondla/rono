@@ -8,7 +8,6 @@ import OurVisionSection from '../components/OurVisionSection';
 import visionImage from '../Assets/Images/Rectangle 13 (3).png';
 import Ready from '../components/Ready';
 import Footer from '../components/Footer';
-import BuiltForSection from '../components/BuiltForSection';
 
 const Home = () => {
   return (
